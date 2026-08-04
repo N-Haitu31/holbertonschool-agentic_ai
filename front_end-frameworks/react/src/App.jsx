@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Hero from './sections/Hero'
+import About from './sections/About'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="pt-18">
         <Header />
         <Hero />
+        <About />
       </div>
     </>
   )
