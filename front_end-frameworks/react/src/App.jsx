@@ -1,18 +1,12 @@
-import { Rocket } from 'lucide-react'
 import Header from './components/Header'
+import Hero from './sections/Hero'
 
 function App() {
   return (
     <>
-      <div className="pt-20">
+      <div className="pt-18">
         <Header />
-        <h1 className="text-4xl font-bold">
-          <Rocket />
-          fullstack-agentic-ia
-        </h1>
-        <h2 className="text-xl text-gray-500">
-          Welcome
-        </h2>
+        <Hero />
       </div>
     </>
   )
