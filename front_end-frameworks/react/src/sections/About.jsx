@@ -11,10 +11,18 @@ function About() {
                     <span className="block text-white">AI that does more than answer</span>
                     <span className="block text-violet-300">It acts with purpose</span>
                 </h2>
-                <p className="text-sm md:text-base text-slate-300 max-w-3xl">
+                <p className="mb-8 text-sm md:text-base text-slate-300 max-w-3xl">
                 Agentic AI refers to artificial intelligence systems designed to pursue goals, make decisions, use tools, and adapt their actions across multiple steps. Instead of only responding to a single prompt, an AI agent can break down a task, plan a strategy, execute actions, evaluate results, and continue until the objective is reached.    
                 </p>
-                <div className="text-left max-w-xl mx-auto flex flex-col gap-6">
+                <div className="grid md:grid-cols-2 gap-8">
+                    <div className="flex flex-col justify-center text-left p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
+                        <h3 className="mb-3 font-bold text-white">Traditional AI</h3>
+                        <p className="mb-8 text-sm text-slate-400">Responds to direct instructions, generates content, answers questions, or analyzes information within a limited interaction</p>
+                        <hr className="mb-8 border-slate-800" />
+                        <h3 className="mb-3 font-bold text-violet-300">Agentic AI</h3>
+                        <p className="text-sm text-slate-400">Understands a goal, chooses actions, uses external tools, follows a plan, and adjusts its behavior based on feedback.</p>
+                    </div>
+                    <div className="text-left flex flex-col gap-6">
                     {steps.map((step) => (
                     <div className="flex items-start gap-4" key={step.number}>
                         <p className="bg-violet-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{step.number}</p>
@@ -24,6 +32,7 @@ function About() {
                         </div>
                     </div>
                     ))}
+                    </div>
                 </div>
             </div>
         </section>
