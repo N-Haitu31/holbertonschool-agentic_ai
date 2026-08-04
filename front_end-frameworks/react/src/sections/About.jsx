@@ -16,10 +16,12 @@ function About() {
                 </p>
                 <div className="text-left max-w-xl mx-auto flex flex-col gap-6">
                     {steps.map((step) => (
-                    <div key={step.number}>
-                        <p className="text-violet-300">{step.number}</p>
-                        <p className="font-bold text-white">{step.title}</p>
-                        <p className="text-sm md:text-base text-slate-300">{step.description}</p>
+                    <div className="flex items-start gap-4" key={step.number}>
+                        <p className="bg-violet-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{step.number}</p>
+                        <div>
+                            <p className="font-bold text-white">{step.title}</p>
+                            <p className="text-sm md:text-base text-slate-300">{step.description}</p>
+                        </div>
                     </div>
                     ))}
                 </div>
