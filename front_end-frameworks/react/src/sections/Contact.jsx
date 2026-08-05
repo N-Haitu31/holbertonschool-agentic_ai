@@ -6,6 +6,11 @@ function Contact() {
     const [isSending, setIsSending] = (useState(false));
     const [feedbackMessage, setFeedbackMessage] = (useState("Please fill all required fields."));
 
+function handleChange(event) {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+}
+
 return (
     <section id="contact-section" className="bg-slate-950 py-24">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
@@ -37,6 +42,14 @@ return (
                     <span>AI-powered workflows</span>
                 </div>
             </div>
+            <form autoComplete="off">
+                <label htmlFor="fullName" className="flex items-center gap-2 text-sm text-slate-300 mb-2">
+                    <UserRound size={16} />
+                    <span>Full name</span>
+                </label>
+                <input id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none" />
+            </form>
         </div>
+
     </section>
 )
