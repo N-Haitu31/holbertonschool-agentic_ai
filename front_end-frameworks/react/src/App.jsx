@@ -7,13 +7,13 @@ import Insights from './sections/Insights'
 function App() {
   return (
     <>
-      <div className="pt-18">
-        <Header />
+      <Header />
+      <main className="pt-18">
         <Hero />
         <About />
         <Features />
         <Insights />
-      </div>
+      </main>
     </>
   )
 }

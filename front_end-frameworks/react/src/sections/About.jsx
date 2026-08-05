@@ -17,10 +17,10 @@ function About() {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div className="flex flex-col justify-center text-left p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
                         <h3 className="mb-3 font-bold text-white">Traditional AI</h3>
-                        <p className="mb-8 text-sm text-slate-400">Responds to direct instructions, generates content, answers questions, or analyzes information within a limited interaction</p>
+                        <p className="mb-8 text-sm text-slate-300">Responds to direct instructions, generates content, answers questions, or analyzes information within a limited interaction</p>
                         <hr className="mb-8 border-slate-800" />
                         <h3 className="mb-3 font-bold text-violet-300">Agentic AI</h3>
-                        <p className="text-sm text-slate-400">Understands a goal, chooses actions, uses external tools, follows a plan, and adjusts its behavior based on feedback.</p>
+                        <p className="text-sm text-slate-300">Understands a goal, chooses actions, uses external tools, follows a plan, and adjusts its behavior based on feedback.</p>
                     </div>
                     <div className="text-left flex flex-col gap-6">
                     {steps.map((step) => (
