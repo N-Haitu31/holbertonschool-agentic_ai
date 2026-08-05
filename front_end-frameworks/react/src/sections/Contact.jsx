@@ -48,6 +48,16 @@ return (
                     <span>Full name</span>
                 </label>
                 <input id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none" />
+                <label htmlFor="email" className="flex items-center gap-2 text-sm text-slate-300 mb-2">
+                    <Mail size={16} />
+                    <span>Email</span>
+                </label>
+                <input id="email" name="email" type="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none" />
+                <label htmlFor="message" className="flex items-center gap-2 text-sm text-slate-300 mb-2">
+                    <MessageSquare size={16} />
+                    <span>Message</span>
+                </label>
+                <textarea id="message" name="message" value={formData.message} onChange={handleChange} className="w-full px-4 py-2 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none" rows="4" />   
             </form>
         </div>
 
