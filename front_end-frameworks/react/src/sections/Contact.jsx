@@ -23,6 +23,20 @@ return (
                     Need more information? 
                 </a>
             </div>
+            <div className="flex gap-6 flex-wrap justify-center">
+                <div className="inline-flex items-center gap-2">
+                    <FolderKanban />
+                    <span>Project-based learning</span>
+                </div>
+                <div className="inline-flex items-center gap-2">
+                    <Users />
+                    <span>Peer learning environment</span>
+                </div>
+                <div className="inline-flex items-center gap-2">
+                    <Sparkle />
+                    <span>AI-powered workflows</span>
+                </div>
+            </div>
         </div>
     </section>
 )
