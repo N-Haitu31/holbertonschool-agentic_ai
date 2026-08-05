@@ -1,6 +1,6 @@
 function InsightCard ({ category, title, description, image, index }) {
     return (
-        <article className="h-80 relative overflow-hidden rounded-xl">
+        <article className={`h-80 relative overflow-hidden rounded-xl ${index === 0 ? 'md:col-span-2' : ''}`}>
             <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-6">
@@ -13,3 +13,4 @@ function InsightCard ({ category, title, description, image, index }) {
         </article>
     )
 }
+export default InsightCard
