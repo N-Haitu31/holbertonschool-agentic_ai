@@ -1,19 +1,14 @@
-import { Brain, Camera, Music2, X, MonitorPlay } from 'lucide-react';
+import Brand from '../ui/Brand'
 
 function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
         <footer className="bg-slate-950 border-t border-slate-800">
-            <div className="max-w-6xl mx-auto px- py-16">
+            <div className="max-w-6xl mx-auto px-6 py-16">
                 <div className="flex flex-col md:flex-row justify-between gap-12">
                     <div className="gap-4"> {/* Colonne Agentic IA */}
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="bg-violet-500 p-1 rounded-lg text-white text-xs">
-                                <Brain aria-hidden="true"  />
-                            </div>
-                            <span className="text-white font-bold">Agentic AI</span>
-                        </div>
+                        <Brand className="mb-4" />
                         <p className="text-xs text-slate-500 mb-4">Explore the future of development with Agentic AI.</p>
                         <div className="flex items-center gap-2 text-white ">
                             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 flex flex-row justify-center items-center rounded-md border border-slate-800 bg-slate-950 hover:bg-violet-500 shadow-xl shadow-slate-950/40 hover:shadow-violet-500/40 transition"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">

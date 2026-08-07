@@ -1,4 +1,4 @@
-import { steps } from '../data/steps'
+import { steps } from '../../data/steps'
 import { Sparkle } from 'lucide-react';
 
 function About() {

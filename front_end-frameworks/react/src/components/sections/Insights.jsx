@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import { getInsights } from '../services/insightsService';
-import InsightCard from '../components/InsightCard';
+import { getInsights } from '../../services/insightsService';
+import InsightCard from '../cards/InsightCard';
 import { Sparkle } from 'lucide-react';
 
 function Insights () {
