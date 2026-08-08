@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { UserRound, Mail, MessageSquare, FolderKanban, Users, Sparkles, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button'
 import SectionBadge from '../ui/SectionBadge';
+import SectionTitle from '../ui/SectionTitle';
 
 function delay(ms) {
   return new Promise((resolve) => {
@@ -39,10 +40,7 @@ return (
     <section id="contact-section" className="bg-slate-950 py-24">
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
             <SectionBadge text="Start your AI journey" />
-            <h2 className="mb-8 text-4xl md:text-5xl font-black tracking-tight leading-none">
-                <span className="block text-white">Ready to Explore</span>
-                <span className="block text-violet-300">Agentic AI?</span>
-            </h2>
+            <SectionTitle line1="Ready to Explore" line2="Agentic AI?" />
             <div className="flex gap-4 mb-8">
                 <Button href="#" text="Enroll at Holberton School" icon={ArrowRight} target="_blank" rel="noopener noreferrer" />
                 <Button href="#" text="Need more information?" variant="secondary" target="_blank" rel="noopener noreferrer" />

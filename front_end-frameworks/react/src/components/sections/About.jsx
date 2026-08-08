@@ -1,15 +1,13 @@
 import { steps } from '../../data/steps'
 import SectionBadge from '../ui/SectionBadge'
+import SectionTitle from '../ui/SectionTitle'
 
 function About() {
     return (
         <section id="about-section" className="bg-slate-950 py-24">
             <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
                 <SectionBadge text="What is Agentic AI?" />
-                <h2 className="mb-8 text-4xl md:text-5xl font-black tracking-tight leading-none">
-                    <span className="block text-white">AI that does more than answer</span>
-                    <span className="block text-violet-300">It acts with purpose</span>
-                </h2>
+                <SectionTitle line1="AI that does more than answer" line2="It acts with purpose" />
                 <p className="mb-8 text-sm md:text-base text-slate-300 max-w-3xl">
                 Agentic AI refers to artificial intelligence systems designed to pursue goals, make decisions, use tools, and adapt their actions across multiple steps. Instead of only responding to a single prompt, an AI agent can break down a task, plan a strategy, execute actions, evaluate results, and continue until the objective is reached.    
                 </p>
