@@ -1,7 +1,7 @@
 function InsightCard ({ category, title, description, image, index }) {
     return (
-        <article className={`h-80 relative overflow-hidden rounded-xl ${index === 0 ? 'md:col-span-2' : ''}`}>
-            <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+        <article className={`group h-80 relative overflow-hidden rounded-xl ${index === 0 ? 'md:col-span-2' : ''}`}>
+            <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-6">
                 <span className="self-start mb-2 px-3 py-1 text-xs rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">
