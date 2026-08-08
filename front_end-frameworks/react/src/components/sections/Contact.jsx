@@ -37,8 +37,10 @@ function Contact() {
     const isFormValid = isFullNameValid && isEmailValid && isMessageValid;
 
 return (
-    <section id="contact-section" className="bg-slate-950 py-24">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+    <section id="contact-section" className="relative bg-slate-950 py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.3),transparent_50%)]"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.12)_1px,transparent_1px)] bg-[size:72px_72px] opacity-30"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
             <SectionBadge text="Start your AI journey" />
             <SectionTitle line1="Ready to Explore" line2="Agentic AI?" />
             <div className="flex gap-4 mb-8">
