@@ -1,4 +1,5 @@
 import Brand from '../ui/Brand'
+import Button from '../ui/Button'
 
 function Header() {
     return (
@@ -12,8 +13,7 @@ function Header() {
                         <a href="#insights-section">Insights</a>
                         <a href="#contact-section">Contact</a>
                     </nav>
-                <a href="#" className="text-white px-4 py-2 font-semibold rounded-md bg-violet-500 hover:bg-violet-600 shadow-lg shadow-violet-500/40
-">Enroll now</a>
+                <Button href="#" text="Enroll now" />
                 </div>
             </div>
         </header>

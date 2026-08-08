@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { UserRound, Mail, MessageSquare, FolderKanban, Users, Sparkle, ArrowRight } from 'lucide-react';
+import Button from '../ui/Button'
 
 function delay(ms) {
   return new Promise((resolve) => {
@@ -43,12 +44,8 @@ return (
                 <span className="block text-violet-300">Agentic AI?</span>
             </h2>
             <div className="flex gap-4 mb-8">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="text-white px-4 py-2 font-semibold rounded-md inline-flex items-center gap-2 bg-violet-500 hover:bg-violet-600 shadow-lg shadow-violet-500/40">
-                Enroll at Holberton School <ArrowRight />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="text-white px-4 py-2 font-semibold rounded-md border border-slate-800 bg-slate-950 hover:bg-slate-900">
-                    Need more information? 
-                </a>
+                <Button href="#" text="Enroll at Holberton School" icon={ArrowRight} target="_blank" rel="noopener noreferrer" />
+                <Button href="#" text="Need more information?" variant="secondary" target="_blank" rel="noopener noreferrer" />
             </div>
             <div className="mb-8 flex gap-6 flex-wrap justify-center">
                 <div className="text-violet-500 inline-flex items-center gap-2">
