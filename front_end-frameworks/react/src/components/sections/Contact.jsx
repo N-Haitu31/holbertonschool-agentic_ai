@@ -61,7 +61,7 @@ return (
                     <span className="text-sm text-slate-300">AI-powered workflows</span>
                 </div>
             </div>
-            <form autoComplete="off" onSubmit={handleSubmit} className="w-full max-w-md p-8 rounded-2xl border border-slate-800 bg-slate-900/50 mt-8">
+            <form autoComplete="off" onSubmit={handleSubmit} className="w-full max-w-md p-8 rounded-2xl border border-slate-800 bg-slate-900 mt-8">
                 <div className="mb-6 w-full">
                     <label htmlFor="fullName" className="flex items-center gap-2 text-sm text-slate-300 mb-2">
                         <UserRound className="text-violet-500" size={16} />
