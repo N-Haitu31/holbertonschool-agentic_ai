@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { getInsights } from '../../services/insightsService';
 import InsightCard from '../cards/InsightCard';
-import { Sparkle } from 'lucide-react';
+import SectionBadge from '../ui/SectionBadge';
 
 function Insights () {
     const [insights, setInsights] = useState ([]) ;
@@ -25,8 +25,7 @@ useEffect(() => {
   return (
     <section id="insights-section" className="bg-slate-950 py-24">
             <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
-                <span className="mb-8 px-4 py-2 text-xs text-violet-300 rounded-full border border-violet-500/20 bg-violet-500/10 inline-flex items-center gap-2
-                "><Sparkle size={14} /> Insights <Sparkle size={14} /></span>
+                <SectionBadge text="Insights" />
                 <h2 className="mb-8 text-4xl md:text-5xl font-black tracking-tight leading-none">
                     <span className="block text-white">Explore Agentic AI</span>
                     <span className="block text-violet-300">Through real-world scenes</span>
