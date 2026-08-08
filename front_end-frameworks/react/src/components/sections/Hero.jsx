@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import Button from '../ui/Button'
 import SectionBadge from '../ui/SectionBadge';
+import StatCard from '../cards/StatCard';
 
 function Hero() {
     return (
@@ -19,28 +20,13 @@ function Hero() {
                 <Button href="#" text="Methodology" variant="secondary" />
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-                    <div className="p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
-                        <p className="text-2xl font-bold text-violet-300">10K+</p>
-                        <p className="text-sm text-slate-300">Active agents</p>
-                    </div>
-                    <div className="p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
-                        <p className="text-2xl font-bold text-violet-300">99.9%</p>
-                        <p className="text-sm text-slate-300">Uptime</p>
-                    </div>
-                    <div className="p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
-                        <p className="text-2xl font-bold text-violet-300">50M+</p>
-                        <p className="text-sm text-slate-300">Tasks automated</p>
-                    </div>
-                    <div className="p-6 rounded-xl border border-slate-800 bg-slate-950 shadow-xl shadow-slate-950/40">
-                        <p className="text-2xl font-bold text-violet-300">24/7</p>
-                        <p className="text-sm text-slate-300">Support</p>
-                    </div>
+                    <StatCard value="10K+" label="Active agents" />
+                    <StatCard value="99.9%" label="Uptime" />
+                    <StatCard value="50M+" label="Tasks automated" />
+                    <StatCard value="24/7" label="Support" />
                  </div>
             </div>
-
-
         </section>
-
     )
 }
 export default Hero
