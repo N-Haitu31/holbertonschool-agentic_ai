@@ -7,4 +7,11 @@ export default defineConfig([
   globalIgnores(["dist"]),
   { files: ["**/*.{js,mjs,cjs,vue}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
   pluginVue.configs["flat/essential"],
+  {
+    rules: {
+      "vue/multi-word-component-names": ["error", {
+        ignores: ["Header", "Footer", "Hero", "About", "Contact", "Features", "Insights", "Brand", "Button"],
+      }],
+    },
+  },
 ]);
