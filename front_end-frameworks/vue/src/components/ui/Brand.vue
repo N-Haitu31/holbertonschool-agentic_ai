@@ -10,3 +10,4 @@ import { Brain } from 'lucide-vue-next'
     <span class="text-white font-bold">Agentic AI</span>
   </div>
 </template>
+
