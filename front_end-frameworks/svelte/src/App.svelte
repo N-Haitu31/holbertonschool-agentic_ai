@@ -1,9 +1,19 @@
 <script>
-  import { Brain } from '@lucide/svelte'
+  import Header from './components/layout/Header.svelte'
+  import Hero from './components/sections/Hero.svelte'
+  import About from './components/sections/About.svelte'
+  import Features from './components/sections/Features.svelte'
+  import Insights from './components/sections/Insights.svelte'
+  import Contact from './components/sections/Contact.svelte'
+  import Footer from './components/layout/Footer.svelte'
 </script>
 
-<div class="flex flex-col items-center justify-center min-h-screen gap-4">
-  <Brain />
-  <h1 class="text-4xl font-bold">Svelte Project Setup</h1>
-  <h2 class="text-xl text-gray-500">Vite + Tailwind + Lucide</h2>
-</div>
+  <Header />
+  <main class="pt-18">
+    <Hero />
+    <About />
+    <Features />
+    <Insights />
+    <Contact />
+  </main>
+<Footer />
